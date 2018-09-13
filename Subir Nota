@@ -1,6 +1,10 @@
 #include <iostream>
 
 using namespace std;
+
+#include <iostream>
+
+using namespace std;
 //P1
 /*
 int main()
@@ -31,67 +35,114 @@ int main()
         }
     }
 }
-    int x=6;
-    int contador=0;
-    for(int i=1; i<x ;i++){
-        if(x%i==0){
-            contador=contador+i;
-        }
-    }
-    if(contador==x){
-        cout<<"es perfecto"<<endl;
-    }
-    else{
-        cout<<"no es perfecto"<<endl;
-    }
-}
 */
 /*
-//P5
+//P3
 int main()
 {
-    int a;
-    int b=1;
-    cout<<"Ingrese un numero: "<<endl;
-    cin>>a;
-
-    for(int i=0;i<=a;i++){
-            b++;
-            if(i%b){
-                cout<<"es primo"<<endl;
-                break;
-            }
-            else {
-                cout<<"no primo"<<endl;
-                break;
-
-            }
-    }
-    return 0;
-}
-*/
-//P2.1
-/*
-int main()
-{
-    int n=11;
-    int a=1;
-    while (a!=n)
+    int x=1,y=1,z,cantidad,fibo=2;
+    cout<<"ingrese un numero"<<endl;
+    cin>>cantidad;
+    cout<<x<<" ";
+    cout<<y<<" ";
+    while(fibo < cantidad)
     {
-        if(a%2!=0)
-        cout<<a<<",";
-        a++;
-        if (a==n){
-            cout<<a;
-            break;
-        }
+        z=x+y;
+        cout<<z<<" ";
+        fibo+=1;
+        x=y;
+        y=z;
     }
 }
-/*
 */
-
 //P4
 /*
+    int main()
+    {
+    int x=6;
+    int contador=0;
+    for(int i=1; i<x ;i++){
+        if(x%i==0){
+            contador=contador+i;
+        }
+    }
+    if(contador==x){
+        cout<<"es perfecto"<<endl;
+    }
+    else{
+        cout<<"no es perfecto"<<endl;
+    }
+}
+*/
+
+//P5
+int main()
+{
+    int primo, divisores=0,j=2,x=2000000,contador=0;
+    while(j<x)
+    {
+        for(int i=1;i<(j+1);i++)
+        {
+            if((j%i)==0){
+                divisores++;
+            }
+            primo=i;
+        }
+        if(divisores==2){
+            contador=contador+primo;
+            cout<<contador<<endl;
+        }
+        j++;
+        divisores=0;
+    }
+}
+
+
+//P2.1
+//P2.2
+/*
+int main()
+{
+    int n=11;
+    int a=1;
+    while (a!=n)
+    {
+        if(a%2!=0)
+        cout<<a<<",";
+        a++;
+        if (a==n){
+            cout<<a;
+            break;
+        }
+    }
+}
+*/
+//P2.3
+/*
+int main()
+{
+    int primo, divisores=0,j=2,x;
+    cout<<"ingrese un numero: ";
+    cin>>x;
+    while(j<x)
+    {
+        for(int i=1;i<(j+1);i++)
+        {
+            if((j%i)==0){
+                divisores++;
+            }
+            primo=i;
+        }
+        if(divisores==2){
+            cout<<primo<<" ";
+        }
+        j++;
+        divisores=0;
+    }
+}
+*/
+//P2.4
+/*
 int main()
 {
     int x=6;
@@ -109,49 +160,4 @@ int main()
     }
 }
 */
-/*
-//P5
-int main()
-{
-    int a;
-    int b=1;
-    cout<<"Ingrese un numero: "<<endl;
-    cin>>a;
-
-    for(int i=0;i<=a;i++){
-            b++;
-            if(i%b){
-                cout<<"es primo"<<endl;
-                break;
-            }
-            else {
-                cout<<"no primo"<<endl;
-                break;
-
-            }
-    }
-    return 0;
-}
-*/
-//P2.1
-/*
-int main()
-{
-    int n=11;
-    int a=1;
-    while (a!=n)
-    {
-        if(a%2!=0)
-        cout<<a<<",";
-        a++;
-        if (a==n){
-            cout<<a;
-            break;
-        }
-    }
-}
-/*
-
-
-
-
+//P2.5
