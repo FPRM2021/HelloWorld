@@ -1,0 +1,157 @@
+#include <iostream>
+
+using namespace std;
+//P1
+/*
+int main()
+{
+    int a=1456;
+     if(a % 4 == 0 && (a % 100 != 0 || a % 400 == 0)){
+  int n       cout<<"El anio "<<a<<"es bisiesto ";
+     }else{
+         cout<<"El anio "<<a<<" no es bisiesto ";
+     }
+      return 0;
+}
+*/
+/*
+//P2
+int main()
+{
+    int n=11;
+    int a=1;
+    while (a!=n)
+    {
+        if(a%2==0)
+        cout<<a<<",";
+        a++;
+        if (a==n){
+            cout<<a;
+            break;
+        }
+    }
+}
+    int x=6;
+    int contador=0;
+    for(int i=1; i<x ;i++){
+        if(x%i==0){
+            contador=contador+i;
+        }
+    }
+    if(contador==x){
+        cout<<"es perfecto"<<endl;
+    }
+    else{
+        cout<<"no es perfecto"<<endl;
+    }
+}
+*/
+/*
+//P5
+int main()
+{
+    int a;
+    int b=1;
+    cout<<"Ingrese un numero: "<<endl;
+    cin>>a;
+
+    for(int i=0;i<=a;i++){
+            b++;
+            if(i%b){
+                cout<<"es primo"<<endl;
+                break;
+            }
+            else {
+                cout<<"no primo"<<endl;
+                break;
+
+            }
+    }
+    return 0;
+}
+*/
+//P2.1
+/*
+int main()
+{
+    int n=11;
+    int a=1;
+    while (a!=n)
+    {
+        if(a%2!=0)
+        cout<<a<<",";
+        a++;
+        if (a==n){
+            cout<<a;
+            break;
+        }
+    }
+}
+/*
+*/
+
+//P4
+/*
+int main()
+{
+    int x=6;
+    int contador=0;
+    for(int i=1; i<x ;i++){
+        if(x%i==0){
+            contador=contador+i;
+        }
+    }
+    if(contador==x){
+        cout<<"es perfecto"<<endl;
+    }
+    else{
+        cout<<"no es perfecto"<<endl;
+    }
+}
+*/
+/*
+//P5
+int main()
+{
+    int a;
+    int b=1;
+    cout<<"Ingrese un numero: "<<endl;
+    cin>>a;
+
+    for(int i=0;i<=a;i++){
+            b++;
+            if(i%b){
+                cout<<"es primo"<<endl;
+                break;
+            }
+            else {
+                cout<<"no primo"<<endl;
+                break;
+
+            }
+    }
+    return 0;
+}
+*/
+//P2.1
+/*
+int main()
+{
+    int n=11;
+    int a=1;
+    while (a!=n)
+    {
+        if(a%2!=0)
+        cout<<a<<",";
+        a++;
+        if (a==n){
+            cout<<a;
+            break;
+        }
+    }
+}
+/*
+
+
+
+
